@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://ckpn3igg8ov7u"]
+
+[ext_resource type="Script" path="res://addons/Trail3D/Trail3D.cs" id="1_rq8x1"]
+[ext_resource type="Material" uid="uid://csv06yyt2whbn" path="res://addons/Trail3D/Trail_Unlit.tres" id="2_viah1"]
+
+[sub_resource type="Curve" id="Curve_prbrg"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1e-05, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[node name="Trail3D" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.76589, 2.92966, 0)
+script = ExtResource("1_rq8x1")
+emitting = true
+duration = 2.0
+snapshotInterval = 0.02
+width = 1.0
+widthCurve = SubResource("Curve_prbrg")
+material = ExtResource("2_viah1")
