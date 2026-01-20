@@ -1,1 +1,1 @@
-Install the plugin, enable it and you should see the Trail3D node pop up when you add a new node :)
+Put the unzipped folder in your addons folder. Enable it from project settings. You can now add a Trail3D from the node tree :)
